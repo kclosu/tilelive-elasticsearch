@@ -1,0 +1,12 @@
+{
+  "plugins": ["add-module-exports", "transform-class-properties"],
+  "presets": [
+    ["env", {
+      "debug": true,
+      "modules": "commonjs",
+      "include": [
+        "transform-es2015-modules-commonjs"
+      ]
+    }]
+  ]
+}

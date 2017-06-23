@@ -1,0 +1,41 @@
+{
+  "name": "tilelive-elasticsearch",
+  "version": "0.0.1",
+  "description": "Implements the tilelive API for generating mapnik vector tiles from ElasticSearch",
+  "main": "lib/tilelive-elasticsearch.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "./node_modules/.bin/babel src -d lib -s",
+    "babel-node": "./node_modules/.bin/babel-node --inspect",
+    "dev": "./node_modules/.bin/nodemon --inspect --exec npm run babel-node -- index.js"
+  },
+  "keywords": [
+    "tilelive",
+    "tiles",
+    "elasticsearch"
+  ],
+  "author": "Ksenia Bataeva <kclosu@gmail.com> (http://kclo.su/)",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-core": "^6.25.0",
+    "babel-plugin-add-module-exports": "^0.2.1",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.24.1",
+    "babel-preset-env": "^1.5.2",
+    "eslint": "^4.0.0",
+    "eslint-config-standard": "^10.2.1",
+    "eslint-plugin-import": "^2.3.0",
+    "eslint-plugin-node": "^5.0.0",
+    "eslint-plugin-promise": "^3.5.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "nodemon": "^1.11.0"
+  },
+  "dependencies": {
+    "cors": "^2.8.3",
+    "elasticsearch": "^13.2.0",
+    "express": "^4.15.3",
+    "pug": "^2.0.0-rc.2",
+    "tilelive": "^5.12.3"
+  }
+}
